@@ -1,0 +1,92 @@
+/* .card > p {
+  color: blue;
+} */
+
+/* .card > p {
+  color: rgb(218, 20, 20);
+} */
+
+/* p {
+  background: rgb(49, 30, 216);
+}
+
+.card > p {
+  color: rgba(197, 218, 15, 0.3);
+} */
+
+/* .card > p {
+  color: hsla(116, 100%, 47%, 0.9);
+} */
+
+/* .card {
+} */
+
+.card > p {
+  color: green;
+  -webkit-text-fill-color: rgb(247, 247, 247);
+  -webkit-text-stroke: 0.9px blue;
+}
+
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px blue;
+
+  direction: rtl;
+}
+
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+
+  text-align: justify;
+}
+
+span {
+  text-align: left;
+  text-transform: uppercase;
+
+  text-decoration: underline solid red;
+}
+
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: double;
+}
+
+pre {
+  tab-size: 5px;
+  letter-spacing: normal;
+}
+
+* {
+  font-family: 'Roboto', Helvetica, sans-serif sans-serif;
+  font-size: 18px;
+
+  font-weight: 900;
+
+  font-display: swap;
+}
+
+span {
+  font-size: x-large;
+
+  font-weight: lighter;
+
+  font-style: oblique;
+}
+
+.test {
+  display: none;
+}
+
+.block {
+  display: block;
+  background: rgb(199, 199, 199);
+
+  margin: auto;
+
+  width: fit-content;
+}

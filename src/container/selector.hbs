@@ -1,0 +1,221 @@
+{{! 
+Це код container файлу для index сторінки, 
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+ }}
+
+{{! <section class='p-5 box'>
+  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+  <h2 id='user'>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h2>
+
+  <button
+    type='button'
+    class='button'
+    id='button'
+  >Купити</button>
+
+  <p class='user'>This is text</p>
+</section>
+
+<section class='p-5 box'>
+  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+
+  <p class='user'>This is text</p>
+</section>
+
+<footer class='p-5 box'>
+  <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+
+  <p class='user'>
+    <em>Test EM</em>
+  </p>
+</footer> }}
+
+{{! 
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}
+
+{{! =================================================== }}
+{{! Другий урок Селектори 2 частина }}
+{{! =================================================== }}
+
+{{! <div class='card p-5 m-5 card-dark'>
+  <div class='item'>First</div>
+  <div class='item'>First</div>
+  <div class='item'>First</div>
+  <p class='item'>Second</p>
+  <p class='item'>Second</p>
+  <strong class='item'>Test strong</strong>
+  <article class='item'>Last</article>
+  <article class='item'>Last</article>
+  <p class='item'>Second</p>
+  <article class='item'>Last</article>
+  <article class='item'>Last</article>
+  <article class='item'>Last</article>
+</div> }}
+
+{{! =================================================== }}
+{{! Другий урок Селектори 3 частина }}
+{{! =================================================== }}
+
+{{! <div class='card p-5 m-5 card-dark'>
+  <input
+    class='input-dark'
+    placeholder='This is text'
+    required
+  />
+  <input class='input-dark' type='number' />
+</div>
+
+<div class='card p-5 m-5 card-dark'>
+  <img
+    alt='image small card 100px'
+    class='small-img'
+    src='https://picsum.photos/200/300'
+    height='100px'
+  />
+
+  <a
+    href='https://picsum.photos/200/300'
+    rel='external'
+  >Link</a>
+  <br />
+  <button class='btn'>Click me</button>
+  <br />
+  <a
+    class='small btn btn-secondary big'
+    href='https://picsum.photos/200/300'
+  >Click me</a>
+</div>
+
+<div class='card p-5 m-5 card-dark'>
+  <p class='big-text'>
+    This is text about info big test info
+    <br />
+    This is text about info big test info
+  </p>
+</div> }}
+
+{{! ======================Силектори 4 частина!====================== }}
+
+{{! №1 Селектор цільового тегу! }}
+{{! <div class='card p-5 m-5 card-dark'>
+  <a href='#test'>Click me</a>
+</div>
+
+<div id='test' class='card p-5 m-5 card-dark'>
+  Якір
+</div> }}
+
+{{! №2 Селектор невідвіданих посилань! }}
+{{! №3 Селектор наведення }}
+{{! №4 Селектор активного тегу }}
+{{! <div class='card p-5 m-5 card-dark'>
+  <a class='link' href='https://www.wikipedia.com/'>Click me</a>
+</div>
+
+<div id='test' class='card p-5 m-5 card-dark'>
+  Якір
+</div> }}
+
+{{! №5 Селектор фокусованого тегу }}
+{{! №6 Селектор фокус всередині тегу }}
+{{! <div class='card p-5 m-5 card-dark'>
+  <a class='link' href='https://www.wikipedia.com/'>Click me</a>
+</div>
+
+<div id='test' class='card p-5 m-5 card-dark'>
+  <input />
+</div> }}
+
+{{! №7 Селектор мови тегу! }}
+{{! <div lang='fr' class='card p-5 m-5 card-dark'>
+  <a class='link' href='https://www.wikipedia.com/'>Click me</a>
+</div>
+
+<div lang='en' id='test' class='card p-5 m-5 card-dark'>
+  <input />
+  <span>Hello world!</span>
+</div> }}
+
+{{! №8 Селектор увімкниного тегу }}
+{{! №9 Селектор вимкниного тегу! }}
+{{! <div lang='fr' class='card p-5 m-5 card-dark'>
+  <a class='link' href='https://www.wikipedia.com/'>Click me</a>
+</div>
+
+<div class='p-5 m-5 card-dark'>
+  <button>Test button</button>
+  <button disabled>Test button</button>
+</div> }}
+
+{{! №10 Селектор редаговоного тегу }}
+{{! <div lang='fr' class='card p-5 m-5 card-dark'>
+  <a class='link' href='https://www.wikipedia.com/'>Click me</a>
+</div>
+
+<div class='card p-5 m-5 card-dark'>
+  <input class='inp' />
+</div> }}
+
+{{! №11 Селектор нередаговоного тегу }}
+{{! <div lang='fr' class='card p-5 m-5 card-dark'>
+  <a class='link' href='https://www.wikipedia.com/'>Click me</a>
+</div>
+
+<div class='card p-5 m-5 card-dark'>
+  <input class='inp' disabled />
+</div> }}
+
+{{! №12 Селектор відміченого тегу }}
+<div lang='fr' class='card p-5 m-5 card-dark'>
+  <a class='link' href='https://www.wikipedia.com/'>Click me</a>
+</div>
+
+<div class='p-5 m-5 card-dark'>
+  <input class='inp' />
+
+  <div class='mt-5'>
+    <div>
+      <input type='checkbox' checked />
+      <span>First checkbox</span>
+    </div>
+    <div>
+      <input type='checkbox' />
+      <span>Second checkbox</span>
+    </div>
+  </div>
+</div>
+
+{{! №13 Селектор відміченого тегу }}
+{{! №14 Селектор не відміченого тегу }}
+{{! <div class='p-5 m-5 card-dark'>
+  <input type='email' required class='valid' />
+</div> }}
+
+{{! №15 Селектор не обов'язкового тегу }}
+{{! №16 Селектор за межі діапазону тегу }}
+<div class='p-5 m-5 card-dark'>
+  <div>
+    <input
+      type='email'
+      required
+      placeholder='test'
+      class='valid'
+    />
+    <span>test</span>
+  </div>
+
+  <div class='mt-5'>
+    <input
+      type='number'
+      min='10'
+      max='20'
+      value='0'
+      required
+      class='valid'
+    />
+  </div>
+</div>
+
+{{! №17 Селектор наявності плейсхолдера в тегу }}
