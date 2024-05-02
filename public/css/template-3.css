@@ -75,7 +75,7 @@
   gap: var(--space-l);
 }
 
-.nav_vertival {
+.nav_vertical {
   gap: var(--space-xm);
   flex-direction: column;
 }
@@ -103,7 +103,7 @@
 
   border-top: 1px solid var(--color-border);
 
-  display: block;
+  display: flex;
   justify-content: space-between;
 }
 
